@@ -10,7 +10,7 @@ services:
   # WIKI_DOMAIN=wiki.local and WIKI_PORT=80
 
   wiki:
-    image: ghcr.io/tib-hannover/smw-crc1153:test
+    image: ghcr.io/tibhannover/smw-crc1153:test
     build: ./context
     ports:
       - ${WIKI_PORT:-80}:80

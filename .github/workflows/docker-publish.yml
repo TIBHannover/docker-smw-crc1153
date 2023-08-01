@@ -7,7 +7,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: tib-hannover/smw-crc1153
+  IMAGE_NAME: tibhannover/smw-crc1153
 
 jobs:
   build:
