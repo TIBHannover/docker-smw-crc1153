@@ -1,0 +1,13 @@
+version: '3'
+
+# Copy this file to docker-compose.override.yml (which is ignored by git)
+# and adjust the copy to your needs.
+# It will override/complement settings in docker-compose.yml.
+
+services:
+
+  wiki:
+    ports:
+      - ${WIKI_PORT:-80}:80
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
