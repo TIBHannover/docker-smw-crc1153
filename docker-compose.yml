@@ -23,24 +23,37 @@ services:
       - WIKI_PORT=${WIKI_PORT:-80}
       - ELASTICSEARCH_HOST=elasticsearch
       - MYSQL_HOST
+    depends_on:
+      mysql:
+        condition: service_healthy
+      elasticsearch:
+        condition: service_healthy
+
+  mysql:
+    image: mysql:8
+    volumes:
+      - mysql-data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: database
+    healthcheck:
+      test: "/usr/bin/mysql --user=root --password=$$MYSQL_ROOT_PASSWORD --execute 'SHOW DATABASES;'"
+      interval: 5s
+      timeout: 5s
+      retries: 42
 
   # https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html#docker
   elasticsearch:
-    image: elasticsearch:6.8.23
+    image: elasticsearch:7.17.21
     volumes:
       - elasticsearch-data:/usr/share/elasticsearch/data
     environment:
       - discovery.type=single-node
       - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
-
-  mysql:
-    image: mysql:5
-    volumes:
-      - mysql-data:/var/lib/mysql
-    environment:
-      MYSQL_ROOT_PASSWORD: database
-    profiles:
-      - mysql
+    healthcheck:
+      test: curl -s http://elasticsearch:9200 >/dev/null || exit 1
+      interval: 10s
+      timeout: 5s
+      retries: 50
 
   backup:
     image: ghcr.io/gesinn-it-pub/mediawiki-backup:${MEDIAWIKI_BACKUP_VERSION:-latest}
