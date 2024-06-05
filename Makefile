@@ -1,7 +1,7 @@
 .PHONY: all
 all:
 
-compose = docker-compose $(COMPOSE_ARGS)
+compose = docker compose $(COMPOSE_ARGS)
 compose-run = $(compose) run --rm
 compose-exec = $(compose) exec -T
 compose-cp = docker compose cp
