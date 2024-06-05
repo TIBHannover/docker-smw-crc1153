@@ -2,8 +2,8 @@
 # docker-smw-crc1153                 #
 ######################################
 
-ARG OPENRESEARCH_STACK=0.0.26
-FROM ghcr.io/gesinn-it-pub/openresearch-stack:${OPENRESEARCH_STACK}
+ARG OPENRESEARCH_STACK=1.39.7-001
+FROM ghcr.io/tibhannover/openresearch-stack:${OPENRESEARCH_STACK}
 
 # LocalSettings.Custom.php
 #ADD LocalSettings.Custom.php /var/www/html/
