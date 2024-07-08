@@ -5,14 +5,27 @@
 ARG OPENRESEARCH_STACK=1.39.7-001
 FROM ghcr.io/tibhannover/openresearch-stack:${OPENRESEARCH_STACK}
 
-# LocalSettings.Custom.php
-#ADD LocalSettings.Custom.php /var/www/html/
+
+
+USER root
+
+######################################
+# add SMW-CRC1153 settings        #
+######################################
+ADD --chown=www-data:www-data LocalSettings.Include.php /var/www/html/.
+ADD --chown=www-data:www-data LocalSettings.SMW1153 /var/www/html/LocalSettings.SMW1153
 
 # Global styles
 #COPY mediawiki-global-styles/styles/* /var/www/html/resources/src/mediawiki.gesinn-it.global.styles/
 
 #COPY media /var/www/html/_custom/media
 #COPY styles /var/www/html/_custom/styles
+######################################
+# add style files                    #
+######################################
+# COPY --chown=www-data:www-data mediawiki-global-styles/styles/* /var/www/html/resources/src/mediawiki.gesinn-it.global.styles/
+COPY --chown=www-data:www-data media /var/www/html/resources/src/mediawiki.smw1153.media/
+COPY --chown=www-data:www-data styles/* /var/www/html/resources/src/mediawiki.smw1153.styles/
 
 ######################################
 # run as http://localhost:8080		 #

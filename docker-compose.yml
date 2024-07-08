@@ -1,5 +1,3 @@
-version: '3'
-
 x-variables:
   - &environment_mysql_root_password MYSQL_ROOT_PASSWORD=database
   - &volume_wiki_images wiki-images:/var/www/html/images
