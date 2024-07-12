@@ -27,17 +27,8 @@ services:
       elasticsearch:
         condition: service_healthy
 
-  mysql:
-    image: mysql:8
-    volumes:
-      - mysql-data:/var/lib/mysql
-    environment:
-      MYSQL_ROOT_PASSWORD: database
-    healthcheck:
-      test: "/usr/bin/mysql --user=root --password=$$MYSQL_ROOT_PASSWORD --execute 'SHOW DATABASES;'"
-      interval: 5s
-      timeout: 5s
-      retries: 42
+  memcached:
+    image: memcached:latest
 
   # https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html#docker
   elasticsearch:
@@ -52,6 +43,18 @@ services:
       interval: 10s
       timeout: 5s
       retries: 50
+
+  mysql:
+    image: mysql:8
+    volumes:
+      - mysql-data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: database
+    healthcheck:
+      test: "/usr/bin/mysql --user=root --password=$$MYSQL_ROOT_PASSWORD --execute 'SHOW DATABASES;'"
+      interval: 5s
+      timeout: 5s
+      retries: 42
 
   backup:
     image: ghcr.io/gesinn-it-pub/mediawiki-backup:${MEDIAWIKI_BACKUP_VERSION:-latest}
