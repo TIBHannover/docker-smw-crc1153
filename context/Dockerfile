@@ -5,7 +5,7 @@
 ARG OPENRESEARCH_STACK=1.39.7-001
 FROM ghcr.io/tibhannover/openresearch-stack:${OPENRESEARCH_STACK}
 
-
+RUN get-github-extension.sh KnowledgeGraph 55874d64946f34ae6acbc6864d1ed8ad293a188d SemanticMediaWiki/KnowledgeGraph
 
 USER root
 

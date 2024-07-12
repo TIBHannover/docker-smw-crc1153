@@ -6,7 +6,7 @@ require_once( "$IP/LocalSettings.OpenResearchStack/LocalSettings.Include.php");
 #$wgWikiVersion = '{{SEMANTIC_CORE_VERSION}}';
 
 $settings = [ 
-    // 'Extensions',
+    'Extensions',
     // 'Namespaces',
     'Skinning',
 ];
