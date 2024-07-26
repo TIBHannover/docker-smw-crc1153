@@ -7,10 +7,13 @@ require_once( "$IP/LocalSettings.OpenResearchStack/LocalSettings.Include.php");
 
 $settings = [ 
     'Extensions',
-    // 'Namespaces',
+    'Namespaces',
+    'Runtime',
     'Skinning',
 ];
 
 foreach ( $settings as $setting ) {
-    require_once( "$IP/LocalSettings.SMW1153/LocalSettings.$setting.php" );
+    if ( file_exists( "$IP/LocalSettings.SMW1153/LocalSettings.$setting.php" ) ) {
+        require_once( "$IP/LocalSettings.SMW1153/LocalSettings.$setting.php" );
+    }
 }
