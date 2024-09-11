@@ -30,9 +30,11 @@ services:
   memcached:
     image: memcached:latest
 
-  # https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html#docker
   elasticsearch:
-    image: elasticsearch:7.17.21
+    ## MW recommends to use their own images and sticking with the version even if a newer ES is available
+    ## https://gitlab.wikimedia.org/repos/search-platform/cirrussearch-elasticsearch-image
+    ## https://docker-registry.wikimedia.org/repos/search-platform/cirrussearch-elasticsearch-image/tags/
+    image: docker-registry.wikimedia.org/repos/search-platform/cirrussearch-elasticsearch-image:v7.10.2-12
     volumes:
       - elasticsearch-data:/usr/share/elasticsearch/data
     environment:
