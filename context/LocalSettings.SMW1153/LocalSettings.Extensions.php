@@ -1,5 +1,5 @@
 <?php
 
 ## -------- KnowledgeGraph --------
-wfLoadExtension( 'KnowledgeGraph' );
+# wfLoadExtension( 'KnowledgeGraph' );
 ## ======== KnowledgeGraph ========
