@@ -2,7 +2,7 @@
 # docker-smw-crc1153                 #
 ######################################
 
-ARG OPENRESEARCH_STACK=1.39.7-003
+ARG OPENRESEARCH_STACK=1.39.8-001
 FROM ghcr.io/tibhannover/openresearch-stack:${OPENRESEARCH_STACK}
 
 RUN get-github-extension.sh KnowledgeGraph 7d9133396e12e7a089a171e33305bc0b6931d7df SemanticMediaWiki/KnowledgeGraph
@@ -36,6 +36,6 @@ ENV WIKI_PORT=8080
 ######################################
 # set smw-crc1153 version     		 #
 ######################################
-ARG SMW-CRC1153_VERSION=2.0.0-alpha7
+ARG SMW-CRC1153_VERSION=2.0.0-beta1
 RUN echo $SMW-CRC1153_VERSION > smw-crc1153-version.txt && \
     echo "\$wgSmwCrc1153Version = '$SMW-CRC1153_VERSION';" >> LocalSettings.Include.php
