@@ -17,13 +17,9 @@ RUN \
     get-github-extension.sh EditAccount 4bc14fa01ae997a492a7189a061218834188f231 gesinn-it-pub/EditAccount && \
     #
     #
-    # get-github-extension.sh CodeMirror 268f838a9c176ef4655b2e2637a81b17963e16c6 wikimedia/mediawiki-extensions-CodeMirror && \
-    # RUN get-github-extension.sh WSSlots 9a39063a848130030c35944dea047386315051ae Open-CSP/WSSlots && \
-    # RUN get-github-extension.sh InteractiveSemanticGraph 701ca84916e58b15a106dbbbd2ca41f48397b15d OpenSemanticLab/mediawiki-extensions-InteractiveSemanticGraph && \
-    #
-    ### KnowledgeGraph
+    ### KnowledgeGraph (2025-08-06)
     # get-github-extension.sh KnowledgeGraph 0fef81f5c70cb5ad6165d0bd22bb973eac06b44e gesinn-it-ilm/KnowledgeGraph 
-    get-github-extension.sh KnowledgeGraph 93e7618c92b0e132dbc8644d28401c652b566a03 SemanticMediaWiki/KnowledgeGraph
+    get-github-extension.sh KnowledgeGraph 0e0c3f578862b961b53e885c976d1c489517d3cf SemanticMediaWiki/KnowledgeGraph
 
 RUN composer-update.sh
 USER root
@@ -55,6 +51,6 @@ ENV WIKI_PORT=8080
 ######################################
 # set smw-crc1153 version     		 #
 ######################################
-ARG SMW-CRC1153_VERSION=2.0.0-beta2
+ARG SMW-CRC1153_VERSION=2.0.0-beta3
 RUN echo $SMW-CRC1153_VERSION > smw-crc1153-version.txt && \
     echo "\$wgSmwCrc1153Version = '$SMW-CRC1153_VERSION';" >> LocalSettings.Include.php

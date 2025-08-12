@@ -17,11 +17,6 @@ $wgGroupPermissions["sysop"]["editaccount"] = true;
 $wgGroupPermissions["bureaucrat"]["editaccount"] = true;
 ## ======== EditAccount ========
 
-// wfLoadExtension( 'CodeEditor' );
-// wfLoadExtension( 'CodeMirror' );
-// wfLoadExtension( 'WSSlots' );
-// wfLoadExtension( 'InteractiveSemanticGraph' );
-
 ## -------- KnowledgeGraph --------
 wfLoadExtension( 'KnowledgeGraph' );
 ## ======== KnowledgeGraph ========
