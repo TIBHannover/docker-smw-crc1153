@@ -9,8 +9,9 @@ USER www-data
 RUN \
     #
     #
-    ### ConfirmAccount (REL1_39 2029-08-04)
-    get-github-extension.sh ConfirmAccount 680e5399a102eed4f287e4561d8b5bcdda74350c wikimedia/mediawiki-extensions-ConfirmAccount && \
+    ### ConfirmAccount (2025-03-10)
+    # last version that supports 1.39
+    get-github-extension.sh ConfirmAccount 5c8c0ca2fc0fd27d2388b407de7f7a7fac6e9e9b wikimedia/mediawiki-extensions-ConfirmAccount && \
     #
     #
     ### EditAccount (2025-02-20)
