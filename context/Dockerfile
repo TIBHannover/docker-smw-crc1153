@@ -19,7 +19,7 @@ RUN \
     #
     ### KnowledgeGraph (2025-08-06)
     # get-github-extension.sh KnowledgeGraph 0fef81f5c70cb5ad6165d0bd22bb973eac06b44e gesinn-it-ilm/KnowledgeGraph 
-    get-github-extension.sh KnowledgeGraph 0e0c3f578862b961b53e885c976d1c489517d3cf SemanticMediaWiki/KnowledgeGraph
+    get-github-extension.sh KnowledgeGraph 557c7ff132891b2619dfe48d8ed2f76cce0fca9c SemanticMediaWiki/KnowledgeGraph
 
 RUN composer-update.sh
 USER root
