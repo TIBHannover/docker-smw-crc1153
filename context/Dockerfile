@@ -52,6 +52,6 @@ ENV WIKI_PORT=8080
 ######################################
 # set smw-crc1153 version     		 #
 ######################################
-ARG SMW-CRC1153_VERSION=2.0.0-beta4
+ARG SMW-CRC1153_VERSION=2.0.0-beta5
 RUN echo $SMW-CRC1153_VERSION > smw-crc1153-version.txt && \
     echo "\$wgSmwCrc1153Version = '$SMW-CRC1153_VERSION';" >> LocalSettings.Include.php
