@@ -18,15 +18,14 @@ RUN \
     get-github-extension.sh EditAccount 4bc14fa01ae997a492a7189a061218834188f231 gesinn-it-pub/EditAccount && \
     #
     #
-    ### KnowledgeGraph (2025-08-06)
-    # get-github-extension.sh KnowledgeGraph 0fef81f5c70cb5ad6165d0bd22bb973eac06b44e gesinn-it-ilm/KnowledgeGraph 
-    get-github-extension.sh KnowledgeGraph 557c7ff132891b2619dfe48d8ed2f76cce0fca9c SemanticMediaWiki/KnowledgeGraph
+    ### KnowledgeGraph (2025-11-21)
+    get-github-extension.sh KnowledgeGraph 3.0.0 SemanticMediaWiki/KnowledgeGraph
 
 RUN composer-update.sh
 USER root
 
 ######################################
-# add SMW-CRC1153 settings        #
+# add SMW-CRC1153 settings           #
 ######################################
 ADD --chown=www-data:www-data LocalSettings.Include.php /var/www/html/.
 ADD --chown=www-data:www-data LocalSettings.SMW1153 /var/www/html/LocalSettings.SMW1153

@@ -25,8 +25,8 @@ bash:
 sqlite-up:
 	$(compose) up -d
 
-.PHONY: mysql-up
-mysql-up:
+.PHONY: mysql-up up
+mysql-up up:
 	MYSQL_HOST=mysql $(compose) --profile mysql up -d
 
 .PHONY: wait-for-wiki
