@@ -26,6 +26,19 @@ services:
         condition: service_healthy
       elasticsearch:
         condition: service_healthy
+    labels:
+      ofelia.enabled: "true"
+      ofelia.job-exec.run-jobs.schedule: "@every 30s"
+      ofelia.job-exec.run-jobs.command: "run-jobs.sh --quiet"
+
+  ofelia:
+    image: mcuadros/ofelia:0.4.0-beta
+    restart: always
+    command: daemon --docker
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ./ofelia/config.ini:/config.ini
+      - ./ofelia/reports:/reports
 
   memcached:
     image: memcached:latest
