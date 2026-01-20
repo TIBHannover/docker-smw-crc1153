@@ -18,8 +18,8 @@ RUN \
     get-github-extension.sh EditAccount 4bc14fa01ae997a492a7189a061218834188f231 gesinn-it-pub/EditAccount && \
     #
     #
-    ### KnowledgeGraph (2025-11-21)
-    get-github-extension.sh KnowledgeGraph 3.0.0 SemanticMediaWiki/KnowledgeGraph
+    ### KnowledgeGraph (2026-01-20)
+    get-github-extension.sh KnowledgeGraph 3.0.1 SemanticMediaWiki/KnowledgeGraph
 
 RUN composer-update.sh
 USER root
