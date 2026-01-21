@@ -19,7 +19,7 @@ RUN \
     #
     #
     ### KnowledgeGraph (2026-01-20)
-    get-github-extension.sh KnowledgeGraph 3.0.1 SemanticMediaWiki/KnowledgeGraph
+    get-github-extension.sh KnowledgeGraph 3.0.2 SemanticMediaWiki/KnowledgeGraph
 
 RUN composer-update.sh
 USER root
