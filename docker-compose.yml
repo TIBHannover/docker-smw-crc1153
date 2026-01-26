@@ -28,8 +28,9 @@ services:
         condition: service_healthy
     labels:
       ofelia.enabled: "true"
-      ofelia.job-exec.run-jobs.schedule: "@every 30s"
+      ofelia.job-exec.run-jobs.schedule: "@every 15s"
       ofelia.job-exec.run-jobs.command: "run-jobs.sh --quiet"
+      ofelia.job-exec.run-jobs.no-overlap: "true"
 
   ofelia:
     image: mcuadros/ofelia:0.4.0-beta
