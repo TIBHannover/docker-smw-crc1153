@@ -17,6 +17,22 @@ $wgGroupPermissions["sysop"]["editaccount"] = true;
 $wgGroupPermissions["bureaucrat"]["editaccount"] = true;
 ## ======== EditAccount ========
 
+## -------- ExternalData --------
+$wgExternalDataSources['graphviz'] = [
+	'name'              => 'GraphViz',
+	'program url'       => 'https://graphviz.org/',
+	'version command'   => null,
+	'command'           => 'dot -K$layout$ -Tsvg',
+	'params'            => [ 'layout' => 'dot' ],
+	'param filters'     => [ 'layout' => '/^(dot|neato|twopi|circo|fdp|osage|patchwork|sfdp)$/' ],
+	'input'             => 'dot',
+	'preprocess'        => 'EDConnectorExe::wikilinks4dot',
+	'postprocess'       => 'EDConnectorExe::innerXML',
+	'min cache seconds' => 30 * 24 * 60 * 60,
+	'tag'               => 'graphviz'
+];
+## ======== ExternalData ========
+
 ## -------- KnowledgeGraph --------
 wfLoadExtension( 'KnowledgeGraph' );
 $wgKnowledgeGraphColorPalettes = [
@@ -56,6 +72,13 @@ $wgKnowledgeGraphColorPalettes = [
 ## -------- Nuke --------
 wfLoadExtension( 'Nuke' );
 ## ======== Nuke ========
+
+## -------- SemanticResultFormats --------
+$srfgFormats[] = "gantt";
+$srfgFormats[] = "graph";
+$srfgFormats[] = "excel";
+$srfgFormats[] = "filtered";
+## ======== SemanticResultFormats ========
 
 ## -------- Scribunto --------
 wfLoadExtension( 'Scribunto' );

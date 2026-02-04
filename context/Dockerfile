@@ -5,10 +5,19 @@
 ARG OPENRESEARCH_STACK=1.39.15-005
 FROM ghcr.io/tibhannover/openresearch-stack:${OPENRESEARCH_STACK}
 
+RUN \
+	### install required apt packages
+	#
+	# graphviz 1)
+	#
+	# 1) External_Data Graphviz
+	#
+	apt-get update && \
+	apt-get install -y graphviz && \
+	rm -rf /var/lib/apt/lists/*
+
 USER www-data
 RUN \
-    #
-    #
     ### ConfirmAccount (2025-03-10)
     # last version that supports 1.39
     get-github-extension.sh ConfirmAccount 5c8c0ca2fc0fd27d2388b407de7f7a7fac6e9e9b wikimedia/mediawiki-extensions-ConfirmAccount && \
