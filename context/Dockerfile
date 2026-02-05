@@ -2,7 +2,7 @@
 # docker-smw-crc1153                 #
 ######################################
 
-ARG OPENRESEARCH_STACK=1.39.15-005
+ARG OPENRESEARCH_STACK=1.39.15-006
 FROM ghcr.io/tibhannover/openresearch-stack:${OPENRESEARCH_STACK}
 
 RUN \
@@ -20,6 +20,7 @@ USER www-data
 RUN \
     ### ConfirmAccount (2025-03-10)
     # last version that supports 1.39
+    # TODO: This is already part of OR-Stack but with a different version!
     get-github-extension.sh ConfirmAccount 5c8c0ca2fc0fd27d2388b407de7f7a7fac6e9e9b wikimedia/mediawiki-extensions-ConfirmAccount && \
     #
     #
