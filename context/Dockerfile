@@ -2,7 +2,7 @@
 # docker-smw-crc1153                 #
 ######################################
 
-ARG OPENRESEARCH_STACK=1.39.15-006
+ARG OPENRESEARCH_STACK=1.39.15-007
 FROM ghcr.io/tibhannover/openresearch-stack:${OPENRESEARCH_STACK}
 
 RUN \
