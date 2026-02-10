@@ -1,0 +1,858 @@
+{
+  "changed": {
+    "egAutoCreatePageOnSpecialPages": {
+      "alt": [
+        "RunQuery"
+      ],
+      "neu": []
+    },
+    "egChameleonLayoutFile": {
+      "alt": "/var/www/html/sfb1153/wiki/skins/chameleon/layouts/custom.xml",
+      "neu": "/var/www/html/skins/chameleon/layouts/standard.xml"
+    },
+    "smwgChangePropagationProtection": {
+      "alt": false,
+      "neu": true
+    },
+    "smwgFieldTypeFeatures": {
+      "alt": 2,
+      "neu": false
+    },
+    "smwgNamespacesWithSemanticLinks": {
+      "alt": {
+        "102": true,
+        "103": false,
+        "108": true,
+        "109": false,
+        "112": true,
+        "113": false,
+        "0": true,
+        "1": false,
+        "2": true,
+        "3": false,
+        "4": true,
+        "5": false,
+        "6": true,
+        "7": false,
+        "8": false,
+        "9": false,
+        "10": false,
+        "11": false,
+        "12": true,
+        "13": false,
+        "14": true,
+        "15": false,
+        "3000": true,
+        "3001": true
+      },
+      "neu": {
+        "102": true,
+        "103": false,
+        "108": true,
+        "109": false,
+        "112": true,
+        "113": false,
+        "0": true,
+        "1": false,
+        "2": true,
+        "3": false,
+        "4": true,
+        "5": false,
+        "6": true,
+        "7": false,
+        "8": false,
+        "9": false,
+        "10": true,
+        "11": false,
+        "12": true,
+        "13": false,
+        "14": true,
+        "15": false,
+        "4012": true,
+        "106": true
+      }
+    },
+    "smwgPageSpecialProperties": {
+      "alt": [
+        "_MDAT",
+        "_LEDT",
+        "_CDAT",
+        "_NEWP"
+      ],
+      "neu": [
+        "_MDAT"
+      ]
+    },
+    "smwgQMaxInlineLimit": {
+      "alt": 1500,
+      "neu": 500
+    },
+    "smwgShowFactbox": {
+      "alt": true,
+      "neu": 1
+    },
+    "wgActions": {
+      "alt": {
+        "formedit": "PFFormEditAction",
+        "formcreate": "PFHelperFormAction",
+        "credits": true,
+        "delete": true,
+        "edit": true,
+        "editchangetags": "SpecialPageAction",
+        "history": true,
+        "info": true,
+        "markpatrolled": true,
+        "mcrundo": false,
+        "mcrrestore": false,
+        "protect": true,
+        "purge": true,
+        "raw": true,
+        "render": true,
+        "revert": true,
+        "revisiondelete": "SpecialPageAction",
+        "rollback": true,
+        "submit": true,
+        "unprotect": true,
+        "unwatch": true,
+        "view": true,
+        "watch": true
+      },
+      "neu": {
+        "cirrusdump": "CirrusSearch\\Dump",
+        "approve": "ARApproveAction",
+        "unapprove": "ARUnapproveAction",
+        "approvefile": "ARApproveFileAction",
+        "unapprovefile": "ARUnapproveFileAction",
+        "formedit": "PFFormEditAction",
+        "formcreate": "PFHelperFormAction"
+      }
+    },
+    "wgAllowCopyUploads": {
+      "alt": true,
+      "neu": false
+    },
+    "wgAllowExternalImages": {
+      "alt": true,
+      "neu": false
+    },
+    "wgArticlePath": {
+      "alt": "/sfb1153/wiki/$1",
+      "neu": "/index.php/$1"
+    },
+    "wgCachePages": {
+      "alt": false,
+      "neu": true
+    },
+    "wgCopyUploadsFromSpecialUpload": {
+      "alt": true,
+      "neu": false
+    },
+    "wgDBname": {
+      "alt": "sfb1153mw",
+      "neu": "wiki"
+    },
+    "wgDBserver": {
+      "alt": "",
+      "neu": "mysql"
+    },
+    "wgDBuser": {
+      "alt": "sfb1153mwuser",
+      "neu": "wiki"
+    },
+    "wgDefaultUserOptions": {
+      "alt": {
+        "monobook-responsive": true,
+        "usecodeeditor": 1,
+        "usebetatoolbar": 1,
+        "usecodemirror": 1,
+        "ccmeonemails": 0,
+        "date": "default",
+        "diffonly": 0,
+        "disablemail": 0,
+        "editfont": "monospace",
+        "editondblclick": 0,
+        "editsectiononrightclick": 0,
+        "email-allow-new-users": 1,
+        "enotifminoredits": 0,
+        "enotifrevealaddr": 0,
+        "enotifusertalkpages": 1,
+        "enotifwatchlistpages": 1,
+        "extendwatchlist": 1,
+        "fancysig": 0,
+        "forceeditsummary": 0,
+        "gender": "unknown",
+        "hideminor": 0,
+        "hidepatrolled": 0,
+        "hidecategorization": 1,
+        "imagesize": 2,
+        "minordefault": 0,
+        "newpageshidepatrolled": 0,
+        "nickname": "",
+        "norollbackdiff": 0,
+        "numberheadings": 0,
+        "previewonfirst": 0,
+        "previewontop": 1,
+        "rcdays": 7,
+        "rcenhancedfilters-disable": 0,
+        "rclimit": 50,
+        "search-match-redirect": true,
+        "showhiddencats": 0,
+        "shownumberswatching": 1,
+        "showrollbackconfirmation": 0,
+        "skin": false,
+        "stubthreshold": 0,
+        "thumbsize": 5,
+        "underline": 2,
+        "uselivepreview": 0,
+        "usenewrc": 1,
+        "watchcreations": 1,
+        "watchdefault": 1,
+        "watchdeletion": 0,
+        "watchuploads": 1,
+        "watchlistdays": 7,
+        "watchlisthideanons": 0,
+        "watchlisthidebots": 0,
+        "watchlisthideliu": 0,
+        "watchlisthideminor": 0,
+        "watchlisthideown": 0,
+        "watchlisthidepatrolled": 0,
+        "watchlisthidecategorization": 1,
+        "watchlistreloadautomatically": 0,
+        "watchlistunwatchlinks": 0,
+        "watchmoves": 0,
+        "watchrollback": 0,
+        "wlenhancedfilters-disable": 0,
+        "wllimit": 250,
+        "useeditwarning": 1,
+        "prefershttps": 1,
+        "requireemail": 0,
+        "timecorrection": "System|60"
+      },
+      "neu": {
+        "visualeditor-autodisable": 0,
+        "visualeditor-betatempdisable": 0,
+        "visualeditor-editor": "wikitext",
+        "visualeditor-enable": 1,
+        "visualeditor-enable-experimental": 0,
+        "visualeditor-enable-language": 0,
+        "visualeditor-hidebetawelcome": 0,
+        "visualeditor-hidetabdialog": 0,
+        "visualeditor-newwikitext": 0,
+        "visualeditor-tabs": "remember-last",
+        "visualeditor-visualdiffpage": 0,
+        "echo-email-frequency": 0,
+        "echo-dont-email-read-notifications": false,
+        "smw-prefs-general-options-show-entity-issue-panel": true,
+        "usecodeeditor": 1,
+        "usebetatoolbar": true,
+        "wikieditor-realtimepreview": 0,
+        "ccmeonemails": 0,
+        "date": "default",
+        "diffonly": 0,
+        "disablemail": 0,
+        "editfont": "monospace",
+        "editondblclick": 0,
+        "editsectiononrightclick": 0,
+        "email-allow-new-users": 1,
+        "enotifminoredits": 0,
+        "enotifrevealaddr": 0,
+        "enotifusertalkpages": 1,
+        "enotifwatchlistpages": 1,
+        "extendwatchlist": 1,
+        "fancysig": 0,
+        "forceeditsummary": 0,
+        "gender": "unknown",
+        "hideminor": 0,
+        "hidepatrolled": 0,
+        "hidecategorization": 1,
+        "imagesize": 2,
+        "minordefault": 0,
+        "newpageshidepatrolled": 0,
+        "nickname": "",
+        "pst-cssjs": 1,
+        "norollbackdiff": 0,
+        "previewonfirst": 0,
+        "previewontop": 1,
+        "rcdays": 7,
+        "rcenhancedfilters-disable": 0,
+        "rclimit": 50,
+        "search-match-redirect": true,
+        "search-special-page": "Search",
+        "searchlimit": 20,
+        "showhiddencats": 0,
+        "shownumberswatching": 1,
+        "showrollbackconfirmation": 0,
+        "skin": false,
+        "thumbsize": 0,
+        "underline": 2,
+        "uselivepreview": 0,
+        "usenewrc": 1,
+        "watchcreations": 1,
+        "watchdefault": 1,
+        "watchdeletion": 0,
+        "watchuploads": 1,
+        "watchlistdays": 7,
+        "watchlisthideanons": 0,
+        "watchlisthidebots": 0,
+        "watchlisthideliu": 0,
+        "watchlisthideminor": 0,
+        "watchlisthideown": 0,
+        "watchlisthidepatrolled": 0,
+        "watchlisthidecategorization": 1,
+        "watchlistreloadautomatically": 0,
+        "watchlistunwatchlinks": 0,
+        "watchmoves": 0,
+        "watchrollback": 0,
+        "wlenhancedfilters-disable": 0,
+        "wllimit": 250,
+        "useeditwarning": 1,
+        "prefershttps": 1,
+        "requireemail": 0,
+        "skin-responsive": 1,
+        "timecorrection": "System|0",
+        "language": "en",
+        "smw-prefs-general-options-time-correction": 1,
+        "smw-prefs-general-options-disable-search-info": 1,
+        "smw-prefs-general-options-suggester-textinput": 1
+      }
+    },
+    "wgEmergencyContact": {
+      "alt": "lab.lsk@tib.eu",
+      "neu": "support@acme.com"
+    },
+    "wgEnotifUserTalk": {
+      "alt": false,
+      "neu": true
+    },
+    "wgEnotifWatchlist": {
+      "alt": false,
+      "neu": true
+    },
+    "wgExtraNamespaces": {
+      "alt": {
+        "102": "Property",
+        "103": "Property_talk",
+        "108": "Concept",
+        "109": "Concept_talk",
+        "112": "smw/schema",
+        "113": "smw/schema_talk",
+        "114": "Rule",
+        "115": "Rule_talk",
+        "3000": "Term",
+        "3001": "Term_talk"
+      },
+      "neu": {
+        "4012": "Test",
+        "4013": "Test_Talk",
+        "102": "Property",
+        "103": "Property_talk",
+        "108": "Concept",
+        "109": "Concept_talk",
+        "112": "smw/schema",
+        "113": "smw/schema_talk"
+      }
+    },
+    "wgFileExtensions": {
+      "alt": [
+        "pdf",
+        "png",
+        "gif",
+        "jpg",
+        "jpeg",
+        "svg",
+        "pdf",
+        "mp4",
+        "mp3"
+      ],
+      "neu": [
+        "png",
+        "gif",
+        "jpg",
+        "jpeg",
+        "svg",
+        "webp"
+      ]
+    },
+    "wgGroupPermissions": {
+      "alt": {
+        "*": {
+          "createaccount": false,
+          "read": false,
+          "edit": false,
+          "createpage": true,
+          "createtalk": true,
+          "writeapi": true,
+          "viewmywatchlist": true,
+          "editmywatchlist": true,
+          "viewmyprivateinfo": true,
+          "editmyprivateinfo": true,
+          "editmyoptions": true,
+          "lookupuser": false,
+          "viewedittab": true,
+          "editaccount": false,
+          "geocode": false
+        },
+        "user": {
+          "smw-vieweditpageinfo": true,
+          "move": true,
+          "move-subpages": true,
+          "move-rootuserpages": true,
+          "move-categorypages": true,
+          "movefile": true,
+          "read": true,
+          "edit": true,
+          "createpage": true,
+          "createtalk": true,
+          "writeapi": true,
+          "upload": true,
+          "reupload": true,
+          "reupload-shared": true,
+          "minoredit": true,
+          "editmyusercss": true,
+          "editmyuserjson": true,
+          "editmyuserjs": true,
+          "editmyuserjsredirect": true,
+          "purge": true,
+          "sendemail": true,
+          "applychangetags": true,
+          "changetags": true,
+          "editcontentmodel": true,
+          "upload_by_url": true,
+          "spamblacklistlog": true,
+          "createclass": true,
+          "multipageedit": true,
+          "createaccount": false,
+          "sci-metadatasearch": true,
+          "geocode": true
+        },
+        "autoconfirmed": {
+          "autoconfirmed": true,
+          "editsemiprotected": true
+        },
+        "bot": {
+          "bot": true,
+          "autoconfirmed": true,
+          "editsemiprotected": true,
+          "nominornewtalk": true,
+          "autopatrol": true,
+          "suppressredirect": true,
+          "apihighlimits": true,
+          "writeapi": true
+        },
+        "sysop": {
+          "block": true,
+          "createaccount": true,
+          "delete": true,
+          "bigdelete": true,
+          "deletedhistory": true,
+          "deletedtext": true,
+          "undelete": true,
+          "editinterface": true,
+          "editsitejson": true,
+          "edituserjson": true,
+          "import": true,
+          "importupload": true,
+          "move": true,
+          "move-subpages": true,
+          "move-rootuserpages": true,
+          "move-categorypages": true,
+          "patrol": true,
+          "autopatrol": true,
+          "protect": true,
+          "editprotected": true,
+          "rollback": true,
+          "upload": true,
+          "reupload": true,
+          "reupload-shared": true,
+          "unwatchedpages": true,
+          "autoconfirmed": true,
+          "editsemiprotected": true,
+          "ipblock-exempt": true,
+          "blockemail": true,
+          "markbotedits": true,
+          "apihighlimits": true,
+          "browsearchive": true,
+          "noratelimit": true,
+          "movefile": true,
+          "unblockself": true,
+          "suppressredirect": true,
+          "mergehistory": true,
+          "managechangetags": true,
+          "deletechangetags": true,
+          "interwiki": true,
+          "lookupuser": true,
+          "nuke": true,
+          "editrestrictedfields": true,
+          "adminlinks": true,
+          "replacetext": true
+        },
+        "interface-admin": {
+          "editinterface": true,
+          "editsitecss": true,
+          "editsitejson": true,
+          "editsitejs": true,
+          "editusercss": true,
+          "edituserjson": true,
+          "edituserjs": true
+        },
+        "bureaucrat": {
+          "userrights": true,
+          "noratelimit": true,
+          "confirmaccount-notify": true,
+          "editaccount": true,
+          "usermerge": true,
+          "renameuser": true,
+          "confirmaccount": true,
+          "requestips": true,
+          "lookupcredentials": true
+        },
+        "suppress": {
+          "hideuser": true,
+          "suppressrevision": true,
+          "viewsuppressed": true,
+          "suppressionlog": true,
+          "deleterevision": true,
+          "deletelogentry": true
+        },
+        "editaccount": {
+          "editaccount": true
+        },
+        "staff": {
+          "editaccount": true
+        },
+        "smwadministrator": {
+          "smw-admin": true
+        },
+        "smwcurator": {
+          "smw-patternedit": true,
+          "smw-schemaedit": true,
+          "smw-pageedit": true,
+          "smw-viewjobqueuewatchlist": true,
+          "smw-viewentityassociatedrevisionmismatch": true,
+          "smw-vieweditpageinfo": true
+        },
+        "smweditor": {
+          "smw-vieweditpageinfo": true
+        }
+      },
+      "neu": {
+        "*": {
+          "createaccount": false,
+          "read": true,
+          "edit": true,
+          "createpage": true,
+          "createtalk": true,
+          "writeapi": true,
+          "viewmywatchlist": true,
+          "editmywatchlist": true,
+          "viewmyprivateinfo": true,
+          "editmyprivateinfo": true,
+          "editmyoptions": true,
+          "viewlinktolatest": true,
+          "viewedittab": true,
+          "editaccount": false
+        },
+        "user": {
+          "smw-vieweditpageinfo": true,
+          "move": true,
+          "move-subpages": true,
+          "move-rootuserpages": true,
+          "move-categorypages": true,
+          "movefile": true,
+          "read": true,
+          "edit": true,
+          "createpage": true,
+          "createtalk": true,
+          "writeapi": true,
+          "upload": true,
+          "reupload": true,
+          "reupload-shared": true,
+          "minoredit": true,
+          "editmyusercss": true,
+          "editmyuserjson": true,
+          "editmyuserjs": true,
+          "editmyuserjsredirect": true,
+          "purge": true,
+          "sendemail": true,
+          "applychangetags": true,
+          "changetags": true,
+          "editcontentmodel": true,
+          "delete": true,
+          "createclass": true,
+          "multipageedit": true,
+          "createaccount": false
+        },
+        "autoconfirmed": {
+          "autoconfirmed": true,
+          "editsemiprotected": true
+        },
+        "bot": {
+          "bot": true,
+          "autoconfirmed": true,
+          "editsemiprotected": true,
+          "nominornewtalk": true,
+          "autopatrol": true,
+          "suppressredirect": true,
+          "apihighlimits": true,
+          "writeapi": true,
+          "upload": true,
+          "editprotected": true
+        },
+        "sysop": {
+          "block": true,
+          "createaccount": true,
+          "delete": true,
+          "bigdelete": true,
+          "deletedhistory": true,
+          "deletedtext": true,
+          "undelete": true,
+          "editinterface": true,
+          "editsitejson": true,
+          "edituserjson": true,
+          "import": true,
+          "importupload": true,
+          "move": true,
+          "move-subpages": true,
+          "move-rootuserpages": true,
+          "move-categorypages": true,
+          "patrol": true,
+          "autopatrol": true,
+          "protect": true,
+          "editprotected": true,
+          "rollback": true,
+          "upload": true,
+          "reupload": true,
+          "reupload-shared": true,
+          "unwatchedpages": true,
+          "autoconfirmed": true,
+          "editsemiprotected": true,
+          "ipblock-exempt": true,
+          "blockemail": true,
+          "markbotedits": true,
+          "apihighlimits": true,
+          "browsearchive": true,
+          "noratelimit": true,
+          "movefile": true,
+          "unblockself": true,
+          "suppressredirect": true,
+          "mergehistory": true,
+          "managechangetags": true,
+          "deletechangetags": true,
+          "editaccount": true,
+          "adminlinks": true,
+          "viewapprover": true,
+          "approverevisions": true,
+          "legallogin-view-log": true,
+          "legallogin-bypass": true,
+          "editrestrictedfields": true,
+          "replacetext": true,
+          "nuke": true
+        },
+        "interface-admin": {
+          "editinterface": true,
+          "editsitecss": true,
+          "editsitejson": true,
+          "editsitejs": true,
+          "editusercss": true,
+          "edituserjson": true,
+          "edituserjs": true
+        },
+        "bureaucrat": {
+          "userrights": true,
+          "noratelimit": true,
+          "confirmaccount-notify": true,
+          "editaccount": true,
+          "confirmaccount": true,
+          "requestips": true,
+          "lookupcredentials": true
+        },
+        "suppress": {
+          "hideuser": true,
+          "suppressrevision": true,
+          "viewsuppressed": true,
+          "suppressionlog": true,
+          "deleterevision": true,
+          "deletelogentry": true
+        },
+        "approver": {
+          "approverevisions": true
+        },
+        "push-subscription-manager": {
+          "manage-all-push-subscriptions": true
+        },
+        "staff": {
+          "editaccount": true
+        },
+        "smwadministrator": {
+          "smw-admin": true
+        },
+        "smwcurator": {
+          "smw-patternedit": true,
+          "smw-schemaedit": true,
+          "smw-pageedit": true,
+          "smw-viewjobqueuewatchlist": true,
+          "smw-viewentityassociatedrevisionmismatch": true,
+          "smw-vieweditpageinfo": true
+        },
+        "smweditor": {
+          "smw-vieweditpageinfo": true
+        }
+      }
+    },
+    "wgLogos": {
+      "alt": {
+        "1x": "/sfb1153/wiki/resources/assets/wiki.png"
+      },
+      "neu": {
+        "1x": "/resources/src/mediawiki.smw1153.media/logo.svg",
+        "icon": "/resources/src/mediawiki.smw1153.media/logo.svg",
+        "svg": "/resources/src/mediawiki.smw1153.media/logo.svg"
+      }
+    },
+    "wgMainCacheType": {
+      "alt": 0,
+      "neu": "memcached-php"
+    },
+    "wgMaxUploadSize": {
+      "alt": 20971520,
+      "neu": 104857600
+    },
+    "wgMemCachedServers": {
+      "alt": [],
+      "neu": [
+        "127.0.0.1:11211"
+      ]
+    },
+    "wgMetaNamespace": {
+      "alt": "SonderForschungsBereich_1153",
+      "neu": "Wiki"
+    },
+    "wgPageFormsAutocompleteOnAllChars": {
+      "alt": true,
+      "neu": false
+    },
+    "wgPageFormsMaxAutocompleteValues": {
+      "alt": 1000000,
+      "neu": 1000
+    },
+    "wgParserCacheType": {
+      "alt": 0,
+      "neu": "memcached-php"
+    },
+    "wgResourceBasePath": {
+      "alt": "/sfb1153/wiki",
+      "neu": ""
+    },
+    "wgScribuntoDefaultEngine": {
+      "alt": "luastandalone",
+      "neu": "luaautodetect"
+    },
+    "wgScriptPath": {
+      "alt": "/sfb1153/wiki",
+      "neu": ""
+    },
+    "wgServer": {
+      "alt": "https://service.tib.eu",
+      "neu": "http://wiki.local:80"
+    },
+    "wgSharedTables": {
+      "alt": [
+        "user",
+        "user_properties",
+        "actor"
+      ],
+      "neu": [
+        "user",
+        "user_properties",
+        "user_autocreate_serial",
+        "actor"
+      ]
+    },
+    "wgSitename": {
+      "alt": "SonderForschungsBereich 1153",
+      "neu": "wiki"
+    },
+    "wgUploadSizeWarning": {
+      "alt": 20971520,
+      "neu": false
+    },
+    "wgWhitelistReadRegexp": {
+      "alt": [],
+      "neu": false
+    }
+  },
+  "unchanged": {
+    "wgAllowDisplayTitle": true,
+    "wgAuthenticationTokenVersion": "<redacted>",
+    "wgConfirmAccountRequestFormItems": {
+      "Biography": {
+        "enabled": false,
+        "minWords": 6
+      },
+      "UserName": {
+        "enabled": true
+      },
+      "RealName": {
+        "enabled": true
+      },
+      "AreasOfInterest": {
+        "enabled": true
+      },
+      "CV": {
+        "enabled": true
+      },
+      "Notes": {
+        "enabled": true
+      },
+      "Links": {
+        "enabled": true
+      },
+      "TermsOfService": {
+        "enabled": true
+      }
+    },
+    "wgDBpassword": "<redacted>",
+    "wgDBprefix": "",
+    "wgDBTableOptions": "ENGINE=InnoDB, DEFAULT CHARSET=binary",
+    "wgDBtype": "mysql",
+    "wgDefaultSkin": "chameleon",
+    "wgDiff3": "/usr/bin/diff3",
+    "wgEmailAuthentication": true,
+    "wgEnableEmail": true,
+    "wgEnableUploads": true,
+    "wgEnableUserEmail": true,
+    "wgImageMagickConvertCommand": "/usr/bin/convert",
+    "wgJobRunRate": 0,
+    "wgLanguageCode": "en",
+    "wgPageFormsMaxLocalAutocompleteValues": 100,
+    "wgPasswordSender": "<redacted>",
+    "wgPFEnableStringFunctions": true,
+    "wgPingback": false,
+    "wgRestrictDisplayTitle": false,
+    "wgRightsIcon": "",
+    "wgRightsPage": "",
+    "wgRightsText": "",
+    "wgRightsUrl": "",
+    "wgScribuntoUseCodeEditor": true,
+    "wgScribuntoUseGeSHi": true,
+    "wgSecretKey": "<redacted>",
+    "wgShellLocale": "C.UTF-8",
+    "wgShowExceptionDetails": true,
+    "wgUpgradeKey": "<redacted>",
+    "wgUseImageMagick": true,
+    "wgUseInstantCommons": false,
+    "wgUsePathInfo": true,
+    "wgWhitelistRead": [
+      "Special:RequestAccount"
+    ]
+  },
+  "missing_in_alt": [],
+  "missing_in_neu": [
+    "egChameleonExternalStyleModule",
+    "smwgQMaxInlineLimitSets",
+    "wgEnableParserCache",
+    "wgShowDBErrorBacktrace",
+    "wgShowSQLError",
+    "wgSyntaxHighlightModels"
+  ]
+}
