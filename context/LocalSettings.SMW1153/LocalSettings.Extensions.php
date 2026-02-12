@@ -28,6 +28,10 @@ $wgExternalDataSources['graphviz'] = [
 	'input'             => 'dot',
 	'preprocess'        => 'EDConnectorExe::wikilinks4dot',
 	'postprocess'       => 'EDConnectorExe::innerXML',
+	'env' => [
+        'HOME'           => '/tmp',
+        'XDG_CACHE_HOME' => '/tmp',
+    ],
 	'min cache seconds' => 30 * 24 * 60 * 60,
 	'tag'               => 'graphviz'
 ];
