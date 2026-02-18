@@ -89,6 +89,7 @@ wfLoadExtension( 'Scribunto' );
 ## ======== Scribunto ========
 
 ## -------- UserFunctions --------
+$wgUFAllowedNamespaces[NS_MAIN] = true;
 $wgUFEnabledPersonalDataFunctions = [
 	'nickname',
 	'realname',
