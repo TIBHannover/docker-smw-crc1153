@@ -88,6 +88,15 @@ $srfgFormats[] = "filtered";
 wfLoadExtension( 'Scribunto' );
 ## ======== Scribunto ========
 
+## -------- UserFunctions --------
+$wgUFEnabledPersonalDataFunctions = [
+	'nickname',
+	'realname',
+	'useremail',
+	'username',
+];
+## ======== UserFunctions ========
+
 ## -------- WikiEditor --------
 wfLoadExtension( 'WikiEditor' );
 ## ======== WikiEditor ========
