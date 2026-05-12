@@ -24,10 +24,6 @@ RUN \
     # get-github-extension.sh ConfirmAccount 5c8c0ca2fc0fd27d2388b407de7f7a7fac6e9e9b wikimedia/mediawiki-extensions-ConfirmAccount && \
     #
     #
-    ### EditAccount (2025-02-20)
-    get-github-extension.sh EditAccount 4bc14fa01ae997a492a7189a061218834188f231 gesinn-it-pub/EditAccount && \
-    #
-    #
     ### KnowledgeGraph (2026-01-20)
     get-github-extension.sh KnowledgeGraph 3.0.2 SemanticMediaWiki/KnowledgeGraph
 
