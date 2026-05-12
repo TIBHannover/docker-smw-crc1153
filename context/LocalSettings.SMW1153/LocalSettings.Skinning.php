@@ -19,5 +19,5 @@ $egChameleonAvailableLayoutFiles = [
 
 ## (Global) Styles
 $egChameleonExternalStyleModules = [
-	__DIR__ . "/../resources/src/mediawiki.smw1153.styles/smw1153.scss" => 'afterMain',
+	__DIR__ . "/../resources/src/mediawiki.smw1153.styles/smw.scss" => 'afterMain',
 ];
