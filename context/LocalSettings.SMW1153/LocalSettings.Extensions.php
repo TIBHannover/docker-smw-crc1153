@@ -77,6 +77,10 @@ $wgKnowledgeGraphColorPalettes = [
 wfLoadExtension( 'Nuke' );
 ## ======== Nuke ========
 
+## -------- PageForms --------
+$wgPageFormsSimpleUpload = true;
+## ======== PageForms ========
+
 ## -------- SemanticResultFormats --------
 $srfgFormats[] = "gantt";
 $srfgFormats[] = "graph";
