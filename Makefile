@@ -1,3 +1,10 @@
+
+# Resolve the GitHub token from a per-identity env var derived from the
+# local git identity (e.g. "alexander-gesinn" -> GH_TOKEN_ALEXANDER_GESINN),
+# falling back to GH_API_TOKEN for contributors who haven't migrated yet.
+GH_USER := $(shell git config user.name)
+GH_TOKEN_VAR := GH_TOKEN_$(shell echo $(GH_USER) | tr '[:lower:]-' '[:upper:]_')
+GH_TOKEN := $(or $($(GH_TOKEN_VAR)),$(GH_API_TOKEN))
 .PHONY: all
 all:
 
@@ -108,12 +115,12 @@ git-push:
 	git push
 
 .PHONY: gh-login
-gh-login: require-GH_API_TOKEN
+gh-login: require-GH_TOKEN
 	gh config set prompt disabled
-	@echo $(GH_API_TOKEN) | gh auth login --with-token
+	@echo $(GH_TOKEN) | gh auth login --with-token
 
-.PHONY: require-GH_API_TOKEN
-require-GH_API_TOKEN:
-ifndef GH_API_TOKEN
-	$(error GH_API_TOKEN is not set)
+.PHONY: require-GH_TOKEN
+require-GH_TOKEN:
+ifndef GH_TOKEN
+	$(error No GitHub token found. Set $(GH_TOKEN_VAR) (derived from git config user.name "$(GH_USER)") or GH_API_TOKEN as a fallback.)
 endif
