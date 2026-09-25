@@ -2,7 +2,7 @@
 # docker-smw-crc1153                 #
 ######################################
 
-ARG OPENRESEARCH_STACK=1.39.15-012
+ARG OPENRESEARCH_STACK=1.39.17-001
 FROM ghcr.io/tibhannover/openresearch-stack:${OPENRESEARCH_STACK}
 
 RUN \
@@ -25,6 +25,7 @@ RUN \
     #
     #
     ### KnowledgeGraph (2026-01-20)
+    ## 3.0.2 is the last version that supports MW 1.39
     get-github-extension.sh KnowledgeGraph 3.0.2 SemanticMediaWiki/KnowledgeGraph
 
 RUN composer-update.sh
