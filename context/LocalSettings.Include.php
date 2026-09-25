@@ -1,3 +1,3 @@
 <?php
 
-require_once( "$IP/LocalSettings.SMW1153/LocalSettings.Include.php" );
+require_once( "$IP/LocalSettings.LabLSK/LocalSettings.Include.php" );

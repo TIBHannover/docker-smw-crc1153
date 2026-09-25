@@ -1,5 +1,5 @@
 ######################################
-# docker-smw-crc1153                 #
+# docker-smw-lablsk                  #
 ######################################
 
 ARG OPENRESEARCH_STACK=1.39.17-001
@@ -32,10 +32,10 @@ RUN composer-update.sh
 USER root
 
 ######################################
-# add SMW-CRC1153 settings           #
+# add LabLSK settings                #
 ######################################
 ADD --chown=www-data:www-data LocalSettings.Include.php /var/www/html/.
-ADD --chown=www-data:www-data LocalSettings.SMW1153 /var/www/html/LocalSettings.SMW1153
+ADD --chown=www-data:www-data LocalSettings.LabLSK /var/www/html/LocalSettings.LabLSK
 
 # Global styles
 #COPY mediawiki-global-styles/styles/* /var/www/html/resources/src/mediawiki.gesinn-it.global.styles/
@@ -46,8 +46,8 @@ ADD --chown=www-data:www-data LocalSettings.SMW1153 /var/www/html/LocalSettings.
 # add style files                    #
 ######################################
 # COPY --chown=www-data:www-data mediawiki-global-styles/styles/* /var/www/html/resources/src/mediawiki.gesinn-it.global.styles/
-COPY --chown=www-data:www-data media /var/www/html/resources/src/mediawiki.smw1153.media/
-COPY --chown=www-data:www-data styles/* /var/www/html/resources/src/mediawiki.smw1153.styles/
+COPY --chown=www-data:www-data media /var/www/html/resources/src/mediawiki.lablsk.media/
+COPY --chown=www-data:www-data styles/* /var/www/html/resources/src/mediawiki.lablsk.styles/
 
 ######################################
 # run as http://localhost:8080		 #
@@ -56,8 +56,8 @@ ENV WIKI_DOMAIN=localhost
 ENV WIKI_PORT=8080
 
 ######################################
-# set smw-crc1153 version     		 #
+# set smw-lablsk version      		 #
 ######################################
-ARG SMW-CRC1153_VERSION=2.1.0
-RUN echo $SMW-CRC1153_VERSION > smw-crc1153-version.txt && \
-    echo "\$wgSmwCrc1153Version = '$SMW-CRC1153_VERSION';" >> LocalSettings.Include.php
+ARG SMW_LABLSK_VERSION=1.0.0
+RUN echo $SMW_LABLSK_VERSION > smw-lablsk-version.txt && \
+    echo "\$wgSmwLabLskVersion = '$SMW_LABLSK_VERSION';" >> LocalSettings.Include.php

@@ -2,9 +2,9 @@
 
 ## Logo
 $wgLogos = [
-	"1x" => "$wgScriptPath/resources/src/mediawiki.smw1153.media/logo.svg",
-	"icon" => "$wgScriptPath/resources/src/mediawiki.smw1153.media/logo.svg",
-	"svg" => "$wgScriptPath/resources/src/mediawiki.smw1153.media/logo.svg",
+	"1x" => "$wgScriptPath/resources/src/mediawiki.lablsk.media/logo.svg",
+	"icon" => "$wgScriptPath/resources/src/mediawiki.lablsk.media/logo.svg",
+	"svg" => "$wgScriptPath/resources/src/mediawiki.lablsk.media/logo.svg",
 ];
 
 $egChameleonLayoutFile= "$IP/skins/chameleon/layouts/standard.xml";
@@ -19,5 +19,5 @@ $egChameleonAvailableLayoutFiles = [
 
 ## (Global) Styles
 $egChameleonExternalStyleModules = [
-	__DIR__ . "/../resources/src/mediawiki.smw1153.styles/smw.scss" => 'afterMain',
+	__DIR__ . "/../resources/src/mediawiki.lablsk.styles/smw.scss" => 'afterMain',
 ];

@@ -13,7 +13,7 @@ $settings = [
 ];
 
 foreach ( $settings as $setting ) {
-    if ( file_exists( "$IP/LocalSettings.SMW1153/LocalSettings.$setting.php" ) ) {
-        require_once( "$IP/LocalSettings.SMW1153/LocalSettings.$setting.php" );
+    if ( file_exists( "$IP/LocalSettings.LabLSK/LocalSettings.$setting.php" ) ) {
+        require_once( "$IP/LocalSettings.LabLSK/LocalSettings.$setting.php" );
     }
 }

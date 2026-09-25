@@ -88,7 +88,7 @@ ci: down build
 
 .PHONY: with-ci
 with-ci:
-	$(eval COMPOSE_ARGS = -p docker-smw-crc1153-ci)
+	$(eval COMPOSE_ARGS = -p docker-smw-lablsk-ci)
 
 .PHONY: disable-opcache
 disable-opcache:
